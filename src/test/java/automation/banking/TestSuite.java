@@ -1,4 +1,4 @@
-package automation.flipKart;
+package automation.banking;
 
 import net.serenitybdd.jbehave.SerenityStories;
 
