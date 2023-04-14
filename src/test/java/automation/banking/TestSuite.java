@@ -6,6 +6,6 @@ public class TestSuite extends SerenityStories{
 	
 	public void findStoriesCalled() {
 		// TODO Auto-generated method stub
-		findStoriesCalled("SignIn.feature");
+		findStoriesCalled("SignIn.story");
 	}
 }
