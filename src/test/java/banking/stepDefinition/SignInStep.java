@@ -1,10 +1,6 @@
 package banking.stepDefinition;
-
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
-
-public class SingInStep {
+import org.jbehave.core.annotations.*;
+public class SignInStep {
 	@Given("Open flipkart application")
 	public void openFlipkartApplication()
 	{

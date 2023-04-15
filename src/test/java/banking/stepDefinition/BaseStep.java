@@ -1,47 +1,31 @@
 package banking.stepDefinition;
 
-import io.cucumber.java.AfterStep;
-import io.cucumber.java.BeforeStep;
-import net.serenitybdd.core.annotations.events.AfterExample;
-import net.serenitybdd.core.annotations.events.AfterScenario;
-import net.serenitybdd.core.annotations.events.BeforeExample;
-import net.serenitybdd.core.annotations.events.BeforeScenario;
+import org.jbehave.core.annotations.AfterStories;
+import org.jbehave.core.annotations.BeforeStories;
 
 public class BaseStep {
-
-	@BeforeScenario()
-	public void beforeScenario()
+	
+	@BeforeStories
+	public void beforeStories()
 	{
-		System.out.println("Running before scenario");
+		System.out.println("Running before stories");
 	}
 	
-	@BeforeStep()
-	public void beforeStep()
+	/*@AfterScenario(uponOutcome=AfterScenario.Outcome.FAILURE)
+	public void afterFailedScenario()
 	{
-		System.out.println("Running before step");
+		System.out.println("Running after failed scenario");
 	}
 	
-	@BeforeExample()
-	public void beforeExample()
+	@AfterStory(uponGivenStory=true)
+	public void afterGivenStory()
 	{
-		System.out.println("Running before example");
-	}
+		System.out.println("Running after Given Story");
+	}*/
 	
-	@AfterScenario()
-	public void afterScenario()
+	@AfterStories
+	public void afterStories()
 	{
-		System.out.println("Running after scenario");
-	}
-	
-	@AfterStep()
-	public void afterStep()
-	{
-		System.out.println("Running after step");
-	}
-	
-	@AfterExample()
-	public void afterExample()
-	{
-		System.out.println("Running after example");
+		System.out.println("Running after stories");
 	}
 }

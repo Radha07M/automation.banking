@@ -5,7 +5,7 @@ Narrative: Login to application
 Scenario: Verify user should be able to login to flipkart application with valid user details
 Meta:
 @test
-@flipkart
+@banking
 
 Given Open flipkart application
 When user enters a username <username> and password <password>
